@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        h1 {
+        text-align: center;
+        }
+
+
+        body{
+        border:black 1px;
+        }
+
+        .infobox{
+        padding-left: 20%;
+        }
+
+        .submitbtn{
+        text-align: center;
+        } 
+
+        input[type="number"] {
+        width: 1.88em;
+        text-align: center;
+        }
+
+        ::placeholder, input[type="date"], input[type="text"], button[type="submit"], button[type="reset"] {
+        font-family: 'Times New Roman', Times, serif;
+        }
+
+        button[type="submit"], button[type="reset"] {
+        font-weight: bold;
+        }
+    </style>
+
+</head>
+
+   <body>
+
+      <form action="Homepage.html" class="form-box" id="form-box" method="GET">
+      <br>
+      <h1>First Universe Hotel</h1>
+      <h1>Room Reservation</h1>
+         <div class="infobox">
+            <h2>Customer Information</h2>
+               <label for="Uname"><strong>First Name&nbsp;</strong></label>
+               <input type="text" id="Username" name="Uname" placeholder="Enter Your First Name" ><br>
+               <br>
+               <label for="Unamee"><strong>Last Name&nbsp;</strong></label>
+               <input type="text" id="Username" name="Unamee" placeholder="Enter Your Last Name" ><br>
+               <br>
+               <label for="email"><strong>Email&nbsp;</strong></label>
+               <input type="email" id="useremail" name="email" placeholder="Enter Your Email"><br>
+               <br>
+               <label for="phone"><strong>Contact Number&nbsp;</strong></label>
+               <input type="tel" id="phone" name="phone" placeholder="012-345 6789" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" ><br>
+               <br>
+               <label for="birth"><strong>Birth Date&nbsp;</strong></label>
+               <input type="date" id="birth" name="birth" placeholder="0000-00-00" pattern="[0-9]{4}[0-9]{2}[0-9]{2}"><br><br>
+
+               <input type="radio">Male&nbsp;
+               <input type="radio">Female<br>
+     
+            <div class="ReserveRoom">
+            <h2>Reservation</h2>
+            <h3>Check-in Date</h3>
+            <input type="date" id="checkin" name="date" placeholder="0000-00-00" pattern="[0-9]{4}[0-9]{2}[0-9]{2}">
+            <h3>Check-out Date</h3>
+            <input type="date" id="checkout" name="date" placeholder="0000-00-00" pattern="[0-9]{4}[0-9]{2}[0-9]{2}">
+            <br>
+            <br>
+         
+         <label for="roomtype"><strong>Room Type&nbsp;</strong></label>
+          <input list="roomtyp" name="roomtype" placaholder="select room type">
+
+          <datalist id="roomtyp">
+            <option value="Standard Room"></option>
+            <option value="Suite Family"></option>
+            <option value="Deluxe Room"></option>
+            <option value="Superior Room"></option>
+
+          </datalist>
+          <label for="roompax"><strong>Pax&nbsp;</strong></label>
+          <input type="number" id="roompax" value="1" min="1" class="roompax">
+          <br><br>
+          <label for="roomqty"><strong>Room Qty&nbsp;</strong></label>
+          <input type="number" id="roomqty" value="1" min="1" class="roomqty">
+          </div>
+          <div class="Price">
+          <h2><strong>Price</strong></h2>
+          <label><strong>Deposit</strong></label>
+          <input type="text" value="RM 50.00"><br><br>
+          <label><strong>Total Price</strong></label>
+          <input type="text" value="RM 50.00">
+
+            </div>
+            <br>
+            <button type="submit" id="submitbtn" class="submitbtn" value="submit">Confirm Reservation</button>&nbsp;
+     <button type="reset" id="reset" class="reset" value="reset">Reset</button>
+         </div>
+      </form>
+   </body>
+</html>
